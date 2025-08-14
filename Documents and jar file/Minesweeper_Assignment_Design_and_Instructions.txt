@@ -1,0 +1,48 @@
+###########################Minesweeper Application – Design and Usage######################
+
+					###### Design Overview######
+The application is a console-based Minesweeper game implemented in Java 21.
+
+It follows clean code principles, with a modular design separating the game logic (Board, Cell) from user interaction (Game).
+
+Mines are randomly placed on the board after the first user move, guaranteeing the first selected cell and its neighbors are mine-free.
+
+The game supports customizable grid size (minimum 4x4) and mine count (maximum 35% of total cells minus a safe zone).
+
+User inputs are validated to ensure correct coordinates are entered.
+
+The board reveals adjacent empty cells automatically, mimicking standard Minesweeper behavior.
+
+The game loop continues until the player either uncovers a mine (loses), reveals all safe cells (wins), or chooses to exit.
+
+					######Assumptions######
+
+The game runs in a terminal/command line interface.
+
+The minimum grid size is 4 to allow a safe zone around the first move.
+
+The maximum number of mines is capped at 35% of total cells, adjusted to preserve the safe zone.
+
+User input for moves follows the format <RowLetter><ColumnNumber>, e.g., A1.
+
+The environment running the game has Java 21 installed.
+
+					######Environment######
+
+Developed and tested on Windows OS.
+
+Requires Java 21 or later installed and properly configured in the system PATH.
+
+					######How to Run######
+
+1. Extract the attached zip file containing source code if needed.
+
+2. To run the game using the provided JAR file, open a terminal and navigate to the directory containing the JAR.
+
+3. Execute the following command:
+	java -jar minesweeper.jar
+
+
+4. Follow the on-screen prompts to input grid size, number of mines, and select squares to reveal.
+
+5. To exit the game at any prompt, enter e.
